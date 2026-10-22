@@ -1,0 +1,10 @@
+2026-10-21 09:00:00 INFO Application started
+2026-10-21 09:01:00 INFO Configuration loaded
+2026-10-21 09:02:00 WARNING Connection is slow
+2026-10-21 09:03:00 ERROR Database connection failed
+2026-10-21 09:04:00 INFO Retrying connection
+2026-10-21 09:05:00 INFO Database connected
+2026-10-21 09:06:00 WARNING Disk space is low
+2026-10-21 09:07:00 INFO Request completed
+2026-10-21 09:08:00 ERROR Failed to write cache
+2026-10-21 09:09:00 INFO Application stopped
