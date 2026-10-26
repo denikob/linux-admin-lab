@@ -1,0 +1,11 @@
+uid=999(labapp) gid=989(labapp) groups=989(labapp),1005(labapp-readers)
+uid=997(labother) gid=988(labother) groups=988(labother)
+labapp-readers:x:1005:labapp
+drwxr-xr-x 3 root root 4096 Oct 24 08:55 /opt
+drwxr-xr-x 2 root root 4096 Oct 24 09:00 /opt/linux-admin-lab-permissions
+-rw-r----- 1 root labapp-readers 50 Oct 24 08:56 /opt/linux-admin-lab-permissions/app.conf
+APP_NAME=permissions-lab
+LOG_LEVEL=INFO
+PORT=8080
+cat: /opt/linux-admin-lab-permissions/app.conf: Permission denied
+labapp write check exit code: 1
