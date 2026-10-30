@@ -1,0 +1,31 @@
+1. Была создана учебная служба под названием lab-heartbeat.service, которая запускает программу под названием 
+lab-heartbeat.sh. Задача этой программы каждые 10 секунд выводить в журнал текущую дату. Данная служба работает 
+от пользователя denis.
+2. Для учебы была смоделирована ситуация, чтобы служба не смогла найти исполняемую программу. В данном случае, 
+в строке ExecStart=/bin/bash /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh, за 
+место lab-heartbeat.sh я специально изменил название на lab-heartbeat-missing.sh. После этого, командой sudo 
+systemctl daemon-reload я перечитал конфигурации служб и перезапустил саму службу lab-heartbeat.service командой 
+sudo systemctl restart lab-heartbeat.service.
+3. После выполнения команды systemctl status lab-heartbeat.service --no-pager -l я увидел, что служба стала 
+висеть в статусе failed с кодом ошибки 127. Команда journalctl -u lab-heartbeat.service так же в своем журнале 
+показала код ошибки 127 No such file or directory с путём к отсутствующему скрипту. Код 127 
+показывает неуспешное завершение.
+4. Получилось так, что служба сначала запустила /bin/bash в стоке ExecStart, а после уже сам интерпретатор bash 
+попытался открыть отсутствующий скрипт, переданный аргументом lab-heartbeat-missing.sh, которой нет и поэтому 
+была получена ошибка 127. Код ошибки 127 это не специальный код ошибки systemd и в журнале man systemd.exec он 
+отсутствует. Это код завершения процесса, который в bash обычно означает command not found (команда не найдена).
+
+В целом хочу сказать, что сам файл lab-heartbeat.sh не имеет право на исполнение, поэтому я запускаю его 
+через интерпретатор bash. Если бы напрямую указали выполнить программу 
+ExecStart=/home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh, тогда мы бы получили 
+код ошибки 203/EXEC, что является стандартным кодом ошибки systemd.
+
+5. После того, как ошибка была установлена, я отредактировал файл службы, а именно установил, что программа 
+называется lab-heartbeat.sh и отредактировал строку ExecStart=/bin/bash 
+/home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat.sh. Далее я перечитал файлы конфигураций 
+командой sudo systemctl daemon-reloade и перезапустил службу командой sudo systemctl restart 
+lab-heartbeat.service. 
+Команда systemctl status lab-heartbeat.service показала, что служба была успешно запущена.
+6. Отдельно хочу сказать, что служба находится в автозагрзке, о чем говорит статус enbaled. Но это не говорит о 
+том, что служба успешно запущена, о чем говорит статус active (running). Данную информацию можно увидеть под 
+командой systemctl status lab-heartbeat.service.

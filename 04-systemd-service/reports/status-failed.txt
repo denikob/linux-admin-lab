@@ -1,0 +1,12 @@
+× lab-heartbeat.service - Учебная служба heartbeat
+     Loaded: loaded (/etc/systemd/system/lab-heartbeat.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Fri 2026-10-30 07:52:59 MSK; 14min ago
+   Duration: 5ms
+    Process: 681 ExecStart=/bin/bash /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh (code=exited, status=127)
+   Main PID: 681 (code=exited, status=127)
+        CPU: 3ms
+
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 systemd[1]: Started lab-heartbeat.service - Учебная служба heartbeat.
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 bash[681]: /bin/bash: /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh: No such file or directory
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Main process exited, code=exited, status=127/n/a
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Failed with result 'exit-code'.

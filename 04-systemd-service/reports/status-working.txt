@@ -1,0 +1,21 @@
+● lab-heartbeat.service - Учебная служба heartbeat
+     Loaded: loaded (/etc/systemd/system/lab-heartbeat.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-10-29 09:00:31 MSK; 19min ago
+   Main PID: 2576 (bash)
+      Tasks: 2 (limit: 9453)
+     Memory: 1.2M (peak: 3.3M)
+        CPU: 933ms
+     CGroup: /system.slice/lab-heartbeat.service
+             ├─2576 /bin/bash /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat.sh
+             └─2911 sleep 10
+
+Oct 29 09:18:49 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:18:49+03:00 Учебная служба работает
+Oct 29 09:18:59 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:18:59+03:00 Учебная служба работает
+Oct 29 09:19:09 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:19:09+03:00 Учебная служба работает
+Oct 29 09:19:20 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:19:20+03:00 Учебная служба работает
+Oct 29 09:19:30 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:19:30+03:00 Учебная служба работает
+Oct 29 09:19:40 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:19:40+03:00 Учебная служба работает
+Oct 29 09:19:52 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:19:52+03:00 Учебная служба работает
+Oct 29 09:20:02 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:20:02+03:00 Учебная служба работает
+Oct 29 09:20:12 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:20:12+03:00 Учебная служба работает
+Oct 29 09:20:23 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:20:23+03:00 Учебная служба работает

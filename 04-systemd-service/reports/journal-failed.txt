@@ -1,0 +1,26 @@
+Oct 29 09:34:54 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:34:54+03:00 Учебная служба работает
+Oct 29 09:35:04 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:35:04+03:00 Учебная служба работает
+Oct 29 09:35:15 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:35:15+03:00 Учебная служба работает
+Oct 29 09:35:25 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:35:25+03:00 Учебная служба работает
+Oct 29 09:35:35 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:35:35+03:00 Учебная служба работает
+Oct 29 09:35:46 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:35:46+03:00 Учебная служба работает
+Oct 29 09:35:56 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:35:56+03:00 Учебная служба работает
+Oct 29 09:36:06 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:36:06+03:00 Учебная служба работает
+Oct 29 09:36:16 DESKTOP-G0UJ3M5 bash[2576]: 2026-10-29T09:36:16+03:00 Учебная служба работает
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: Stopping lab-heartbeat.service - Учебная служба heartbeat...
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Deactivated successfully.
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: Stopped lab-heartbeat.service - Учебная служба heartbeat.
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Consumed 1.666s CPU time, 3.3M memory peak, 0B memory swap peak.
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: Started lab-heartbeat.service - Учебная служба heartbeat.
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 bash[3160]: /bin/bash: /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh: No such file or directory
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Main process exited, code=exited, status=127/n/a
+Oct 29 09:36:23 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Failed with result 'exit-code'.
+-- Boot b5848e616f5e4642b4370dc505c284a7 --
+Oct 30 07:40:28 DESKTOP-G0UJ3M5 systemd[1]: Started lab-heartbeat.service - Учебная служба heartbeat.
+Oct 30 07:40:28 DESKTOP-G0UJ3M5 bash[173]: /bin/bash: /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh: No such file or directory
+Oct 30 07:40:28 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Main process exited, code=exited, status=127/n/a
+Oct 30 07:40:28 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Failed with result 'exit-code'.
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 systemd[1]: Started lab-heartbeat.service - Учебная служба heartbeat.
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 bash[681]: /bin/bash: /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat-missing.sh: No such file or directory
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Main process exited, code=exited, status=127/n/a
+Oct 30 07:52:59 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Failed with result 'exit-code'.

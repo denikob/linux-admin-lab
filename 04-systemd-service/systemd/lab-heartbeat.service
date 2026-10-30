@@ -1,0 +1,12 @@
+[Unit]
+Description=Учебная служба heartbeat
+
+[Service]
+Type=simple
+User=denis
+ExecStart=/bin/bash /home/denis/linux-admin-lab/04-systemd-service/scripts/lab-heartbeat.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
