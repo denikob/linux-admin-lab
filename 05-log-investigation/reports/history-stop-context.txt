@@ -1,0 +1,8 @@
+2026-10-31T08:50:32+03:00 DESKTOP-G0UJ3M5 bash[177]: 2026-10-31T08:50:32+03:00 Учебная служба работает
+2026-10-31T08:50:37+03:00 DESKTOP-G0UJ3M5 sudo[1523]:    denis : TTY=pts/0 ; PWD=/home/denis ; USER=root ; COMMAND=/usr/bin/systemctl stop lab-heartbeat.service
+2026-10-31T08:50:37+03:00 DESKTOP-G0UJ3M5 sudo[1523]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-10-31T08:50:38+03:00 DESKTOP-G0UJ3M5 systemd[1]: Stopping lab-heartbeat.service - Учебная служба heartbeat...
+2026-10-31T08:50:38+03:00 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Deactivated successfully.
+2026-10-31T08:50:38+03:00 DESKTOP-G0UJ3M5 systemd[1]: Stopped lab-heartbeat.service - Учебная служба heartbeat.
+2026-10-31T08:50:38+03:00 DESKTOP-G0UJ3M5 systemd[1]: lab-heartbeat.service: Consumed 3.404s CPU time, 3.1M memory peak, 0B memory swap peak.
+2026-10-31T08:50:38+03:00 DESKTOP-G0UJ3M5 sudo[1523]: pam_unix(sudo:session): session closed for user root

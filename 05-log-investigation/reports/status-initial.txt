@@ -1,0 +1,3 @@
+○ lab-heartbeat.service - Учебная служба heartbeat
+     Loaded: loaded (/etc/systemd/system/lab-heartbeat.service; disabled; preset: enabled)
+     Active: inactive (dead)
