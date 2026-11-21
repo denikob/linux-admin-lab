@@ -1,0 +1,5 @@
+PING 172.21.112.1 (172.21.112.1) 56(84) bytes of data.
+
+--- 172.21.112.1 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3113ms
+

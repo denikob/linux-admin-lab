@@ -19,5 +19,6 @@
 3. [Управление процессами Linux](03-process-management/README.md) - выполнено.
 4. [Развёртывание и диагностика службы systemd](04-systemd-service/README.md) — выполнено.
 5. [Исследование системных журналов и диагностика событий Linux](05-log-investigation/README.md) — выполнено.
+6. [Диагностика сетевых подключений](06-network-troubleshooting/README.md) — выполнено.
 
 Работы будут добавляться по мере выполнения.
